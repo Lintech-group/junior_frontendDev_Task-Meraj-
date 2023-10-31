@@ -1,0 +1,164 @@
+.full_container{
+    background-color:lightblue;
+}
+@media screen and (max-width: 500px) {
+    .full_container {
+        height : 170vh;   
+    }
+  }
+  
+
+.services_text_area{
+    width: 50%;
+    margin: auto;
+    margin-top: 120px;
+    text-align: center;
+}
+.container2 {
+    position : relative;
+    width: 75%;
+    display : grid;
+    grid-template-columns: repeat(3, 1fr); 
+    justify-content : center;
+    margin: auto;
+    margin-top: 60px;
+    height: 40vh;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container2{
+      display : grid;
+      grid-template-columns: repeat(2, 1fr); 
+      margin-top: 50px;
+      
+     }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      .full_container {
+        height : 90vh;   
+    }
+  }
+
+
+
+  .services_heading_text{
+    padding-top: 50px;
+    font-size: 35px;
+    font-weight: 800;
+    color: darkorange;
+    margin-bottom: 15px;
+  }
+
+  .container2 .card2 {
+    position: relative;
+    max-width : 350px;
+    height : 200px;  
+    background-color : #fff;
+    margin : 30px 10px;
+    padding : 20px 15px;
+    
+    display : flex;
+    flex-direction : column;
+    box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+    transition : 0.7s ease-in-out;
+    border-radius : 15px;
+    background-color: #151030;
+  }
+  .container2 .card2:hover {
+    height : 360px;    
+  }
+  @media screen and (min-width: 300px) and (max-width: 1024px) {
+    .container2 .card2:hover {
+        height : 320px;   
+    }
+  }
+  
+  .container2 .card2 .image2 {
+    position : relative;
+    width : 297px;
+    height : 260px;
+   
+    top : -40%;
+  
+    box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+    z-index : 1;
+  }
+  
+  .container2 .card2 .image2 img {
+    max-width : 100%;
+    border-radius : 15px;
+  }
+  
+  .container2 .card2 .content2 {
+    position : relative;
+    top : -140px;
+    
+    color : #111;
+    text-align : center;
+    
+    visibility : hidden;
+    opacity : 0;
+    transition : 0.3s ease-in-out;
+      
+  }
+  
+  .container2 .card2:hover .content2 {
+     margin-top : 10px;
+     visibility : visible;
+     opacity : 1;
+     transition-delay: 0.4s;
+    
+  }
+  @media screen and (max-width: 768px) {
+    .container2 .card2:hover .content2 {
+        margin-top : 30px;
+    }
+  }
+  
+  .service_name_heading{
+    color: white;
+    font-size: 14px;
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .serviceDetails_text{
+    color: white;
+    font-size: 14px;
+    text-align: justify;
+    margin-top: 5px;
+  }
+  @media screen and (max-width: 768px) {
+    .serviceDetails_text {
+        font-size: 12px;
+    }
+  }
+
+
+
+ /* 1 column for small devices */
+
+  .card2 {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  /* Media queries for larger devices */
+  /* 3 columns for large and tablet devices */
+  @media screen and (max-width: 768px) {
+    .container2 {
+      grid-template-columns: repeat(1, 1fr); 
+     
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .services_text_area {
+      width: 90%; 
+    }
+  }
+
+  /* Additional styling can be added as needed */
+  
+  /* If you want to make additional adjustments for different screen sizes */
+
+ 

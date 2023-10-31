@@ -9,19 +9,25 @@
   &__content h1 {
     font-size: 45px;
     font-weight: 700;
+    @include responsive(765px) {
+      font-size: 25px;
+      text-align: center;
+    }
   }
 
   &__card {
     position: absolute;
-    bottom: -230px;
-    width: 470px;
+    bottom: -280px;
+    width: 450px;
+   
     padding: 80px 40px;
-    background: $green;
+   
     right: 0;
     color: $black;
     @include responsive(765px) {
       width: 300px;
       bottom: -500px;
+      display:none;
     }
 
     &-h6 {
@@ -39,6 +45,30 @@
     &-text {
       font-size: 15px;
       letter-spacing: 1px;
+    }
+  }
+}
+
+.show__card {
+  
+  width: 450px; /* Set the width as per your requirement */
+  height: 350px; /* Set the height as per your requirement */
+  overflow: hidden;
+
+  .image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s;
+
+    &.active {
+      opacity: 1;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
     }
   }
 }

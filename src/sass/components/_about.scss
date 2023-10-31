@@ -1,5 +1,5 @@
 .about {
-  padding: 120px 0;
+ margin-bottom: 50px;
   width: 100%;
 
   &__h4 {
@@ -16,6 +16,7 @@
     font-weight: 300;
     line-height: 2;
     padding-left: 50px;
+    text-align: justify;
     @include responsive(765px) {
       padding-left: 20px;
     }
@@ -23,7 +24,7 @@
 
   &__section {
     background: #efefefef;
-    padding: 60px;
+  
     text-align: center;
     @include responsive(765px) {
       margin-bottom: 20px;
@@ -45,3 +46,89 @@
     }
   }
 }
+
+.text_container{
+ display: flex;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .text_container{
+     display: inline-block;
+   }
+  }
+
+  @media screen and (min-width: 300px) and (max-width: 767px) {
+    .text_container{
+       display: inline-block;
+     }
+    }
+  
+
+.about_all_cards{
+ display: grid;
+ grid-template-columns: repeat(3,1fr);
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .about_all_cards{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin-left: 100px;
+   
+   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .about_card{
+      margin-top: 30px;
+   }
+  }
+
+
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .about_all_cards{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .about__h4{
+    margin-left: 45px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .about__text p{
+    padding-right: 150px;
+  }
+}
+
+
+
+
+
+
+
+.about_card{
+  width: 46vh;
+  height: 40vh;
+  padding: 15px;
+}
+
+.aboutUs_heading_text{
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 40px;
+  color:darkorange;
+}
+.about__section-icon {
+  transition: transform 0.3s ease; // Smoothly transition the scale when hovered
+
+  // Define the initial state
+  transform: scale(1);
+
+  // Define the state when hovered
+  &:hover {
+    transform: scale(1.1); // Scale the icon to 110% on hover
+  }
+}
+
+

@@ -1,0 +1,38 @@
+.marquee {
+    position: relative;
+    width: 150vw;
+    max-width: 100%;
+    height: 206px;
+    overflow-x: hidden;
+   margin-top: 26px;
+  }
+  
+  .track {
+    position: absolute;
+    white-space: nowrap;
+  }
+  
+  .track .marque_main_div > h1 {
+    margin: 20px 0;
+    font-size: 3rem;
+    font-family: Antonio;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #f4955c;
+    text-transform: uppercase;
+  }
+
+  .marque_main_div{
+    display: flex;
+    align-items: center;
+  }
+  .marque_img{
+    display: flex;
+    width: 70px;
+    height: 70px;
+    margin-left:30px;
+  }
+  .marque_img img{
+    
+    margin-left:30px;
+  }

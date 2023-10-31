@@ -1,7 +1,7 @@
 .header {
   width: 100%;
-  height: 75vh;
-  @include bgImage("/images/1.jpg");
+  height: 100vh;
+  @include bgImage("/images/Nitex.jpg");
   background-color: rgba(0, 0, 0, 0.6);
   @include flexCenter;
   color: $white;
@@ -31,4 +31,7 @@
     letter-spacing: 1px;
     font-weight: 600;
   }
+}
+.header__content-links{
+  font-size: 25px;
 }
